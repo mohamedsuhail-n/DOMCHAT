@@ -1,0 +1,39 @@
+# Web framework & CORS
+Flask>=2.2
+flask-cors
+
+# Environment Configuration
+python-dotenv
+
+# Web Crawling & Parsing
+requests
+beautifulsoup4
+lxml
+playwright
+
+# Document Processing
+python-docx
+pdfplumber
+Pillow
+tqdm
+
+# Machine Learning / Embedding / LLM
+sentence-transformers>=2.2
+langchain>=0.1.0
+llama-cpp-python>=0.2.57
+transformers>=4.35
+groq>=0.3.0
+
+# Vector DB
+chromadb>=0.4
+
+# Typing helpers (for Python <3.10 support)
+typing_extensions
+
+
+#for intsalling requirements.txt
+# pip install -r requirements.txt
+
+# --- Post-install step for Playwright ---
+# After installing run:
+# python -m playwright install
