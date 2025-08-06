@@ -63,7 +63,7 @@ class Config:
     #     "qwen-1.5-110b-chat",            # Latest Qwen full-chat
 
     # LLM provider configuration
-    LLM_PROVIDER = "local"           # Options: "local", "groq"
+    LLM_PROVIDER = "groq"           # Options: "local", "groq"
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")  # Set your Groq API key in environment
     GROQ_MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"
     # GROQ_BASE_URL = "https://api.groq.com/openai/v1"
