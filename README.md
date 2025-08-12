@@ -1,2 +1,2 @@
-# R.A.D.A.R
-Responsive AI for Domain Analysis &amp; Reporting
+# DOMCHAT
+Domain Conversational Hub for Analytical Tasks
