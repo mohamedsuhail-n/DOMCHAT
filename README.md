@@ -53,7 +53,7 @@ The setup script will:
 - Update your system packages
 - Install Python dependencies
 - Create a virtual environment
-- Install Playwright browsers
+- Install Playwright Chromium browser (only browser needed)
 - Set up all required components
 
 ### Manual Setup
@@ -69,7 +69,7 @@ source dcenv/bin/activate  # On Windows: dcenv\Scripts\activate
 2. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
-playwright install
+playwright install chromium  # Only installs Chromium browser
 ```
 
 3. **Configure environment**:
@@ -221,7 +221,7 @@ Solution: Kill existing processes on port 5000 or change the port in `api.py`.
 ```
 Playwright browsers not installed
 ```
-Solution: Run `playwright install` after installing requirements.
+Solution: Run `playwright install chromium` after installing requirements.
 
 ### Performance Tips
 

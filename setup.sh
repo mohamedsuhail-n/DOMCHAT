@@ -15,8 +15,8 @@ pip install --upgrade pip wheel setuptools
 echo "🔹 Installing Python dependencies..."
 pip install -r requirements.txt
 
-echo "🔹 Installing Playwright browsers..."
-playwright install
+echo "🔹 Installing Playwright Chromium browser..."
+playwright install chromium
 
 echo "✅ Setup complete!"
 echo ""
