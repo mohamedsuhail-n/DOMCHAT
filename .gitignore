@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+
+# Storage
+storage/chroma/*
+storage/uploads/*
+storage/exports/*
+!storage/chroma/.gitkeep
+!storage/uploads/.gitkeep
+!storage/exports/.gitkeep
+!storage/db/.gitkeep
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Env
+.env
