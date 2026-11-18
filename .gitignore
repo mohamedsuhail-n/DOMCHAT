@@ -1,23 +1,103 @@
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
 # Python
-venv/
+# =========================
 __pycache__/
 *.py[cod]
 *$py.class
-*.sqlite3
 
-# Storage
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python testing / tooling
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Node / frontend
+# =========================
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+build/
+frontend/dist/
+
+# Vite cache
+.vite/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# DOMCHAT runtime storage
+# =========================
+
+# ChromaDB runtime data
 storage/chroma/*
+
+# SQLite runtime database
+storage/db/*
+
+# Uploaded files
 storage/uploads/*
+
+# Generated exports
 storage/exports/*
+
+# Keep empty storage folders in Git
 !storage/chroma/.gitkeep
+!storage/db/.gitkeep
 !storage/uploads/.gitkeep
 !storage/exports/.gitkeep
-!storage/db/.gitkeep
 
-# Node
-frontend/node_modules/
-frontend/dist/
-frontend/.env.local
+# =========================
+# Models / large files
+# =========================
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
 
-# Env
-.env
+# =========================
+# Editor / IDE
+# =========================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Accidental files
+# =========================
+powershell.exe
